@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <p>focus the password</p>
+        <form id="form">username:
+            <input type="text" placeholder="username"><br>
+         password:
+         <input type="password" placeholder="password">
+        </form>
+        <script>
+            const pwd=document.querySelector('input[type="password"]');
+            pwd.addEventListener('focus',(e)=>{
+                e.target.style.backgroundColor="blue";
+            })
+            pwd.addEventListener('blur',(e)=>{
+                e.target.style.backgroundColor='red'
+            })
+        </script>

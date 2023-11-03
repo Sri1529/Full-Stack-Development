@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>
+            JS
+        </title>
+    </head>
+    <body>
+        <h1>JS is bla bla </h1>
+        <h2>js is bla bla h2</h2>
+        <h1>js is bla bla h2</h1>
+        <h2>js is bla bla h2</h2>
+        <h1>js is bla bla h2</h1>
+        <h3>js is bla bla h2</h3>
+        <h2>js is bla bla h2</h2>
+        <button id="btncount">Count H2</button>
+        <script>
+         let btn=document.getElementById('btncount');
+         btn.addEventListener('click',()=>
+         {
+            let headings=document.getElementsByTagName('h2');
+            alert(`The number of H2 tages present are:${headings.length}`)
+         })
+         
+        </script>
+    </body>
+</html>

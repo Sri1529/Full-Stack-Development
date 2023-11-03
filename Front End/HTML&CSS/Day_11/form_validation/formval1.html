@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>
+            Form Validation
+        </title>
+    </head>
+    <body>
+        <script>
+        function formval()
+        {
+            var name=document.form.Name.value;
+            var password=document.form.Password.value;
+            var password2=document.form.password2.value;
+
+            if(name==null||name=="")
+            {
+                alert("Name cant be empty...")
+                return false;
+            }
+            else if(password.length<6)
+            {
+             alert("Password must be atleast 6 characcters...")
+             return false;
+            }
+            else if(password2!=password)
+            {
+                alert("Password must be same")
+                return false
+            }
+        }
+        </script>
+
+        <form name="form" method="post" action="success.html" onsubmit="return formval()">
+        Name:<input type="text" name="Name">
+        <br>
+        Password:<input type="password" name="Password">
+        <br>
+        Re-enter-Password:<input type="password" name="password2">
+        <br>
+        <input type="submit" value="Register">
+
+
+        </form>
+    </body>
+</html>

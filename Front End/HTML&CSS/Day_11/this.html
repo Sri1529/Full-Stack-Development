@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>
+            JS
+        </title>
+    </head>
+    <body>
+        <script>
+            let person={
+                firstname:'Sri',Lastname:'Hari',
+
+                greet:function()
+                {
+                    console.log("Helo");
+                },
+
+                getfullname:function()
+                {
+                    return this.firstname+" "+this.Lastname
+                }
+
+            }
+
+            console.log(person.firstname)
+            console.log(person.getfullname)
+        </script>
+    </body>
+</html>

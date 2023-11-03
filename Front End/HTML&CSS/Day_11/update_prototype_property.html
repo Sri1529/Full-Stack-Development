@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>
+            JS
+        </title>
+    </head>
+    <body>
+        <script>
+            function person()
+            {
+                this.name ='Sri'
+            }
+            person.prototype.age=20;
+            person.prototype.name='Hari'//compiler ignores bcz of same property name....
+
+            const person1= new person();
+            
+            console.log(person1.age)
+            console.log(person1.name)
+            person.prototype={age :50}
+            const person2= new person();
+            console.log(person2.age)
+
+
+        </script>
+    </body>
+</html>

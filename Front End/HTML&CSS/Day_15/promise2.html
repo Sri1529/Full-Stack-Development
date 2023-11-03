@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>JS</title>
+    </head>
+    <body>
+        <script>
+            let x= new Promise(function(resolve,reject)
+            {
+                resolve("Promise Resolved..");
+            })
+
+            x
+             .then(function success(result)
+             {
+                console.log(result);
+             })
+             .then(function succesval()
+             {
+                console.log("You can call multiple functions tnis way")
+             })
+
+             let c= new Promise(function(res,rej)
+             {
+                rej("Promise rejected");
+             })
+             c.then(function successs(result1)
+             {
+                console.log(result1)
+             })
+             .catch(function succ(result2)
+             {
+                console.log("Catch block "+result2);
+             })
+            
+        </script>
+    </body>
+</html>

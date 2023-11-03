@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>
+            JS
+        </title>
+    </head>
+    <body>
+        <script>
+            let countdown = function f(fromnumber)
+            {
+                console.log(fromnumber)
+
+                let nextnum = fromnumber-1;
+                if(nextnum >0)
+                {
+                    f(nextnum);
+                }
+            }
+
+            let newct = countdown;
+            countdown = null;
+            newct(10);
+        </script>
+    </body>
+</html>

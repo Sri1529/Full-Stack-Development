@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>
+            JS
+        </title>
+    </head>
+    <body>
+        <p id="para">Hello buddy! This will definitely fuck u...:)
+        </p>
+        <button id="btn">Button</button>
+        <script>
+            let p=document.querySelector('#para');
+            p.style.color='red';
+            p.style.fontWeight='bold'
+
+            let b=document.querySelector("#btn");
+            function display()
+            {
+                alert("It was clicked");
+            }
+            b.addEventListener('click',display)
+        </script>
+    </body>
+</html>

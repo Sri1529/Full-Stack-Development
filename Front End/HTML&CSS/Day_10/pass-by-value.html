@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>
+            JS
+        </title>
+    </head>
+    <body>
+        <script>
+            function sqr(a)
+            {
+                a=a*a;
+                return a;
+            }
+
+            y=10;
+            result=sqr(y);
+
+            console.log("Y = "+y);//no change.....
+            console.log("Result = "+result)//gets updated in stack....
+                                          //y=10
+                                          //result =a=10
+                                          //result=a=100
+                                          //result =100
+        </script>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>
+            Java Script
+        </title>
+    </head>
+    <body>
+        <p id="p1"></p>
+        <button onclick="save()">Submit</button>
+        <script>
+            var y=100;// var is a global variable 
+            display;
+            function save()
+            {
+                let y=10;//let is a local variable
+                if(confirm("Do you want to save the data")==true)
+
+                {
+                    display="data saved"+y;
+                }
+                else{
+                    display="data not saved"+y;
+                }
+                document.getElementById("p1").innerHTML=display
+                document.getElementById("p1").innerHTML=y
+            }
+            
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>
+            JS
+        </title>
+    </head>
+    <body>
+        <script>
+            let countval= new Promise(function(resolve,reject)
+            {
+                resolve('Promise resolved');
+            })
+
+            countval.finally(
+                function greet()
+                {
+                    console.log("The code is executed..")
+                }
+            )
+            .then(function gt()
+            {
+               console.log("Mission success")
+            })
+            .catch(function dt()
+            {
+                console.log("Mission failed..")
+            })
+        </script>
+    </body>
+</html>

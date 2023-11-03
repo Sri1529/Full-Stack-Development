@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>
+            JS
+        </title>
+    </head>
+    <body>
+        <script>
+            function person(firstName,lastName)
+            {
+                this.firstName=firstName
+                this.lastName=lastName
+                      
+                if(!new.target)
+                {
+                    return new person(firstName,lastName)
+                }
+
+                this.getfullname=function()
+                {
+                    return this.firstName+""+this.lastName
+                }
+                
+            }
+
+            let obj=   person('sri','Hari')
+            console.log(person.firstName)
+        </script>
+    </body>
+</html>

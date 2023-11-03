@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>
+            JS
+        </title>
+    </head>
+    <body>
+        Username:
+        <input type="text" id="username" secured="true" value="Dubukku">
+        <br>
+        <br>
+        Password:
+        <input type="password" id="password" placeholder="Enter your password" style="color: red;">
+        <br>
+        <button id="btn">Send</button>
+        <script>
+          let input= document.querySelector('#username');
+          console.log(input.secured);
+          console.log(input.value);
+
+          for(let attr of input.attributes)
+          {
+            console.log(`${attr.name}=${attr.value}`)
+          }
+
+          input.setAttribute('value','Stark')
+          //input.setAttribute('type','radio')
+
+          input.value="admin"//wont get updated....check console and display
+          console.log(input.getAttribute('value'));
+
+          let input1=document.querySelector("#password");
+          let styleattr=input1.getAttribute('style');
+          console.log(styleattr);
+          console.log(input1.style);
+
+          input1.setAttribute("style","color: yellow");
+          console.log(input1.color)
+          let btnsend=document.querySelector('#btn')
+
+          if(btnsend)
+          {
+            btnsend.setAttribute("disabled","")
+          }
+
+
+
+
+        </script>
+    </body>
+</html>

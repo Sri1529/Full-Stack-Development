@@ -1,0 +1,30 @@
+<html>
+    <title>
+        Java Script
+    </title>
+    <head>
+     
+    </head>
+    <body>
+        <input type="text">
+     <br>
+     <button onclick="save()">Submit</button>
+
+   <p id="p1"></p>
+   <script>
+   function save()
+   {
+    var display;
+    if(confirm("Do you want to save the data ?")==true)
+    {
+        display="Data saved successfully...";
+
+    }
+    else{
+        display="Data not saved..";
+    }
+    document.getElementById("p1").innerHTML=display
+   }
+   </script>
+    </body>
+</html>

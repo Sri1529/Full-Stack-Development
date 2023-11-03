@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>
+            JS
+        </title>
+    </head>
+    <body>
+        <script>
+            async function f()
+            {
+                console.log('Async function');
+                return Promise.reject(0);//resolve
+            }
+            f().then(function ff(resu)
+            {
+                console.log(resu)
+            })
+
+            .catch(function gfr(resul)
+            {
+                console.log(resul)
+            })
+        </script>
+    </body>
+</html>

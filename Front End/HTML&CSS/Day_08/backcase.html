@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>
+            Java Script
+        </title>
+    </head>
+    <body>
+        <p id="p1"></p>
+        <p id="p2"></p>
+        <script>
+            amount = 1000,rate=0.05,duration=3;
+            check = amount * (1+rate*duration);
+            result= `Total amount payable: ${amount * (1+rate*duration)}`;
+            document.getElementById("p1").innerHTML=check;
+            document.getElementById("p2").innerHTML=result;
+        </script>
+    </body>
+</html>

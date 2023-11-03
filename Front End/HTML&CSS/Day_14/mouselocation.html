@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>JS Mouse Location Demo</title>
+        <style>
+            #track {
+                background-color: goldenrod;
+                height: 200px;
+                width: 800px;
+
+            }
+        </style>
+    </head>
+    <body>
+        <p>Move your mouse to see its location.</p>
+        <div id="track"></div>
+        <p id="log"></p>
+        <script>
+            let track = document.querySelector('#track');
+            track.addEventListener('mousemove',(e) => {
+                let log = document.querySelector('#log');
+                log.innerText = `
+                Screen X/Y: (${e.screenX}, ${e.screenY})
+                client X/Y: (${e.screenX}, ${e.screenY})`
+            });
+        </script>
+    </body>
+</html>

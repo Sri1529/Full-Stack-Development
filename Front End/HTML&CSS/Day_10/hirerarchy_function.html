@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>
+            JS
+        </title>
+        <h1>
+            Hirerarchy functions loses the value of the property
+        </h1>
+        <h3>
+            SO Arrow function was introduced to handle the complication of the lossiong values of the property..
+        </h3>
+    </head>
+    <body>
+        <script>
+            function person()
+            {
+                this.name='Sri'
+                this.age=23;
+                this.sayname = function()
+                {
+                    console.log(this.name);
+
+                     innerfunction=() =>
+                    {
+                        console.log(this.age)
+                        console.log(this);
+                    }
+                    innerfunction();
+                }
+            }
+
+           
+
+            x = new person()
+            {
+                x.sayname();
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>
+            JS
+        </title>
+    </head>
+    <body>
+        <p id="p1"></p>
+        <p id="p2"></p>
+        <script>
+             sum =(x=1,y=x)=>
+             {
+                 return x+y
+             }
+
+             sum1=(x=y,y=1)=>
+             {
+                return x+y;
+             }
+
+             document.getElementById("p1").innerHTML=sum();
+             document.getElementById("p2").innerHTML=sum1();
+        </script>
+    </body>
+</html>

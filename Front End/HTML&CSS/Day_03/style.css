@@ -1,0 +1,19 @@
+body{
+    
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+button{
+    background-color: chartreuse;
+    align-items: center;
+}
+caption{
+    text-align: center;
+}
+fieldset{
+    background-color: khaki;
+}

@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>
+            JavaScript
+        </title>
+    </head>
+    <body>
+        <script>
+            var person = new Object();
+
+            person.firstname="Sri"
+            person.lastname="Hari"
+            person["age"]=23;
+            person.getname = function()
+            {
+                return this.firstname+ ' '+this.lastname;
+            }
+
+            console.log(person.firstname);
+            console.log(person.lastname);
+            console.log(person["age"]);
+            console.log(person.getname());
+        </script>
+    </body>
+</html>

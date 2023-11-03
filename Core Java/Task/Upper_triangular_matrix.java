@@ -1,0 +1,44 @@
+package Task;
+import java.util.*;
+
+public class Upper_triangular_matrix 
+{
+    public static void main(String args[])
+    {
+    	Scanner sc= new Scanner(System.in);
+    	System.out.println("Enter the no.of rows:");
+    	int r=sc.nextInt();
+    	System.out.println("Enter the no.of Columns:");
+    	int c=sc.nextInt();
+    	int flag=0;
+    	int a[][]=new int[r][c];
+    	for(int i=0;i<c;i++)
+    	{
+    		for(int j=0;j<r;j++)
+    		{
+    			a[i][j]=sc.nextInt();
+    		}
+    	}
+    	
+    	for(int i=0;i<r;i++)
+    	{
+    		for(int j=0;j<i;j++)
+    		{
+    			if(a[i][j]==0)
+    			{
+    				flag++;
+    			}
+    		}
+    	}
+    	if(flag>=3)
+    	{
+    		System.out.println("Yes");
+    		
+    	}
+    	else
+    	{
+    		System.out.println("No");
+    	}
+    	
+    }
+}

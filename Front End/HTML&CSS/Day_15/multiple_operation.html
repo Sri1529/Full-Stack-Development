@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>JS</title>
+    </head>
+    <body>
+        <script>
+            function greet(name,callback)
+            {
+                console.log('Hi'+''+name);
+                callback();
+                console.log("Completed");
+            }
+            function callme()
+            {
+                console.log("I am a callback function");
+            }
+
+            greet('peter',callme);
+        </script>
+    </body>
+</html>

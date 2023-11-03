@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>
+            Java Script
+        </title>
+    </head>
+    <body>
+        <script>
+           let result;
+
+            const operstor=prompt("ENter the oprator either +,-,*,/");
+
+            const num1=parseFloat(prompt("Enter the 1st number"))
+            const num2=parseFloat(prompt("Enter the 2nd number"))
+
+            switch(operstor)
+            {
+                case '+':
+                result=num1+num2;
+                console.log(`${num1} + ${num2} = ${result}`)
+                break;
+
+                case '-':
+                result=num1-num2;
+                console.log(`${num1} - ${num2} = ${result}`)
+                break;
+
+                case '*':
+                result=num1*num2;
+                console.log(`${num1} * ${num2} = ${result}`)
+                break;
+
+                case '/':
+                result=num1/num2;
+                console.log(`${num1} / ${num2} = ${result}`)
+                break;
+                
+                default:
+                    console.log("Invalid operator")
+
+            }
+        </script>
+    </body>
+</html>

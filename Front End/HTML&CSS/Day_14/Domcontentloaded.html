@@ -1,0 +1,22 @@
+<html>
+    <head>JS DOMContentLoaded Event
+        <title>
+          JS
+        </title>
+        
+    </head>
+    <body>
+        <button id="btn">Click Me!</button>
+        <script>
+           document.addEventListener('DOMContentLoaded',()=>
+           {
+            let btn=document.getElementById('btn')
+            btn.addEventListener('click',()=>
+            {
+              console.log("clicked")
+            })
+           })
+          </script>
+        
+    </body>
+</html>
